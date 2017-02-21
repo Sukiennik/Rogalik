@@ -1,0 +1,38 @@
+.background{
+    -fx-background-color: black;
+}
+
+.header .label{
+    -fx-background-color: yellow;
+    -fx-background-radius: 30;
+    -fx-label-padding: 5 5 5 5;
+    -fx-text-fill:black;
+    -fx-font-size:15;
+    -fx-alignment: center;
+    -fx-font-weight: normal;
+}
+
+.middle{
+    -fx-spacing: 30;
+}
+
+.buttonBar {
+    -fx-spacing: 30;
+    -fx-alignment: center;
+}
+
+.button{
+    -fx-font-size: 14;
+    -fx-background-color:black;
+    -fx-font-weight: bold;
+    -fx-text-fill:white;
+    -fx-padding: 5 10 5 10;
+    -fx-pref-height: 25;
+    -fx-pref-width: 125;
+    -fx-effect: dropshadow( three-pass-box, orange, 10.0, 0.0, 0.0, 0.0);
+}
+
+.button:focused, .button:hover {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}

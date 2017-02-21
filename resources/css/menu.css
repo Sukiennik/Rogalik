@@ -1,0 +1,224 @@
+/*.background {
+    -fx-background-image: url("/images/background2.png");
+    -fx-background-repeat: repeat;
+    -fx-background-color:
+            linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+            linear-gradient(#20262b, #191d22),
+            radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+}*/
+/*
+.background {
+    -fx-background-color:
+            linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+            linear-gradient(#20262b, #191d22),
+            radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+}
+*/
+
+.background {
+    -fx-background-image: url("/images/menu/background/4.jpg"); /*3.png*/
+    -fx-background-size: stretch; /*if img normalny a nie tło*/
+    -fx-background-color:
+            linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+            linear-gradient(#20262b, #191d22),
+            radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+}
+
+#headingLabel {
+    -fx-background-color:
+            linear-gradient(#6868cc 0%, #232787 25%, #37389b 75%, #7575d9 100%),
+            linear-gradient(#020b66, #3a3a9e),
+            linear-gradient(#9d9eff 0%, #6b6acf 20%, #343598 80%, #242488 100%),
+            linear-gradient(#8a8aee 0%, #6b6acf 20%, #343598 80%, #26268a 100%),
+            linear-gradient(#7777db 0%, #6060c4 50%, #5052b4 51%, #2a2b8e 100%);
+    -fx-background-insets: 0,1,4,5,6;
+    -fx-background-radius: 9,8,5,4,3;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 46px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
+    -fx-padding: 10 50 10 50;
+    -fx-alignment: center;
+}
+
+.list-cell {
+    -fx-font-size: 14;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 5, 4, 3;
+    -fx-background-color: linear-gradient(rgba(245, 245, 255, 0.4) 0%, rgba(219, 219, 255, 0.4) 50%, rgba(202, 202, 255, 0.4) 51%, rgba(215, 215, 255, 0.4) 100%);
+    -fx-alignment: center;
+}
+
+
+
+.list-cell:filled:focused,selected {
+    -fx-background-color:
+            linear-gradient(#6868cc 0%, #232787 25%, #37389b 75%, #7575d9 100%),
+            linear-gradient(#020b66, #3a3a9e),
+            linear-gradient(#9d9eff 0%, #6b6acf 20%, #343598 80%, #242488 100%),
+            linear-gradient(#8a8aee 0%, #6b6acf 20%, #343598 80%, #26268a 100%),
+            linear-gradient(#7777db 0%, #6060c4 50%, #5052b4 51%, #2a2b8e 100%);
+    -fx-background-insets: 0,1,4,5,6;
+    -fx-background-radius: 9,8,5,4,3;
+    -fx-padding: 5 10 5 10;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
+
+}
+.list-cell:filled{
+    -fx-background-color:
+            linear-gradient(#6868cc 0%, #232787 25%, #37389b 75%, #7575d9 100%),
+            linear-gradient(#020b66, #3a3a9e),
+            linear-gradient(#b9b9ff 0%, #c2c2ff 20%, #afafff 80%, #c8c8ff 100%),
+            linear-gradient(#f5f5ff 0%, #dbdbff 50%, #cacaff 51%, #d7d7ff 100%);
+    -fx-background-insets: 0,1,4,5;
+    -fx-background-radius: 9,8,5,4;
+    -fx-padding: 5 10 5 10;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
+
+}
+
+.list-cell:focused {
+    -fx-background-color:
+            linear-gradient(#f5f5ff 0%, #dbdbff 50%, #cacaff 51%, #d7d7ff 100%);
+}
+
+.label{
+    -fx-font-size: 16;
+    -fx-font-weight: 600;
+}
+
+.text-area{
+    -fx-text-fill: lawngreen;
+    -fx-highlight-fill: lawngreen;
+    -fx-font-size: 13;
+
+}
+
+.text-area:focused{
+    -fx-text-fill: black;
+    -fx-highlight-fill: black;
+    -fx-background-color: linear-gradient(#f5f5ff 0%, #dbdbff 50%, #cacaff 51%, #d7d7ff 100%); /*0 daje pełną przeźroczystośc*/
+}
+
+.text-area, .text-area .viewport, .text-area .content {
+    -fx-background-color: rgba(255,255,255,0.2) ; /*0 daje pełną przeźroczystośc*/
+}
+
+.text-area .scroll-pane .content{
+    -fx-font-family: Consolas;
+    -fx-background-color: transparent;
+}
+.scroll-bar{
+    -fx-background-color: #f5f5ff;
+    -fx-background-radius: 2em;
+}
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+    -fx-border-color:transparent;
+    -fx-background-radius: 2em;
+}
+.scroll-bar:vertical .track-background,
+.scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 2em;
+}
+.scroll-bar:horizontal .thumb {
+    -fx-background-color: #6b6acf;
+    -fx-background-insets: 4 0 4 0;
+    -fx-background-radius: 2em;
+}
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #6b6acf;
+    -fx-background-insets: 0 4 0 4;
+    -fx-background-radius: 2em;
+}
+.scroll-bar:horizontal .thumb:hover,
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #343598;
+}
+.scroll-bar:horizontal .thumb:pressed,
+.scroll-bar:vertical .thumb:pressed {
+    -fx-background-color: #343598;
+}
+.scroll-bar:vertical .increment-button, .scroll-bar:vertical .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 2em;
+    -fx-padding: 5;
+}
+.scroll-bar:horizontal .increment-button, .scroll-bar:horizontal .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 2em;
+    -fx-padding: 5;
+}
+.scroll-bar:horizontal .increment-arrow {
+    -fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+    -fx-background-color: #6b6acf;
+    -fx-padding: 0.25em;
+    -fx-rotate: -90;
+}
+.scroll-bar:vertical .increment-arrow {
+    -fx-background-color: #6b6acf;
+    -fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+    -fx-padding: 0.25em;
+    -fx-rotate: 0;
+}
+.scroll-bar:horizontal .decrement-arrow {
+    -fx-background-color: #6b6acf;
+    -fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+    -fx-padding: 0.25em;
+    -fx-rotate: 90;
+}
+.scroll-bar:vertical .decrement-arrow {
+    -fx-background-color: #6b6acf;
+    -fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+    -fx-padding: 0.25em;
+    -fx-rotate: -180;
+}
+.scroll-bar:vertical:focused,
+.scroll-bar:horizontal:focused {
+    -fx-background-color: transparent,#f5f5ff,#f5f5ff;
+}
+
+.VBox {
+    -fx-spacing: 20;
+}
+
+.textLabel {
+    -fx-font-family: "Helvetica";
+    -fx-text-fill: #eee9e9;
+}
+
+.valueLabel {
+    -fx-font-family: "Helvetica";
+}
+
+#heroHpLabel{
+    -fx-text-fill: red;
+}
+#heroArmorLabel{
+    -fx-text-fill: greenyellow;
+
+}
+#heroNameLabel{
+    -fx-text-fill: #4b7bff;
+
+}
+#heroDamageLabel{
+    -fx-text-fill: #ffa005;
+}
+
+#heroEnergyLabel{
+    -fx-text-fill: #be72ff;
+}
+

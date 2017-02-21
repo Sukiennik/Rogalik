@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane minHeight="367" minWidth="646.5" styleClass="background" xmlns="http://javafx.com/javafx/8.0.72" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.rogalik.client.controller.game.GameOverController">
+    <top>
+    </top>
+    <center>
+    </center>
+    <left>
+        <AnchorPane minHeight="50" minWidth="350">
+            <children>
+            <VBox styleClass="middle" alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                     <Label fx:id="message" text="Nazwa:" />
+                      <VBox alignment="CENTER" prefHeight="100.0" prefWidth="350.0" styleClass="buttons">
+                          <children>
+
+                              <Button fx:id="menu" mnemonicParsing="false" text="Zagraj inną postacią" />
+                              <Button fx:id="login" mnemonicParsing="false" text="Wyloguj" />
+                          </children>
+                      </VBox>
+               </children>
+            </VBox>
+            </children>
+        </AnchorPane>
+    </left>
+    <bottom>
+    </bottom>
+    <stylesheets>
+        <URL value="@/css/gameOver.css" />
+    </stylesheets>
+</BorderPane>

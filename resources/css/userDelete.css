@@ -1,0 +1,82 @@
+.background{
+    -fx-background-color: black;
+}
+
+/**Costumization of DialogPane Header**/
+.header {
+    -fx-background-color: transparent;
+    -fx-spacing: 50;
+}
+
+.header .label{
+    -fx-background-color: yellow;
+    -fx-background-radius: 30;
+    -fx-label-padding: 5 5 5 5;
+    -fx-text-fill:black;
+    -fx-font-size:15;
+    -fx-alignment: center;
+    -fx-font-weight: normal;
+}
+
+.imageView{
+    -fx-fit-to-height: true;
+    -fx-fit-to-width: true;
+    -fx-scale-x: -1;
+}
+
+.middle{
+    -fx-background-image: url("/images/menu/background/background2.png");
+    -fx-background-repeat: repeat;
+    -fx-background-color:
+            linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+            linear-gradient(#20262b, #191d22),
+            radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-hgap: 10;
+    -fx-vgap: 10;
+    -fx-border-insets: 20 10 10 10;
+    -fx-alignment: center;
+    -fx-spacing: 20;
+}
+
+.middle .label {
+    -fx-font-family: "Helvetica";
+    -fx-text-fill: #eff599;
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+}
+
+
+.text-field, .text-area {
+    -fx-prompt-text-fill: rgb(99, 99, 99);
+    -fx-background-color:
+            rgba(255, 239, 132, 0.84),
+            linear-gradient(rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.31) 50%),
+            rgb(255, 234, 106);
+    -fx-background-insets: 0 0 -1 0, 0, 1.5;
+    -fx-background-radius: 6, 5, 4;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 15;
+
+}
+
+/**Costumization of The Bar where the buttons are located**/
+.buttonBar{
+    -fx-spacing: 50;
+    -fx-background-color: transparent;
+}
+
+/**Costumization of Buttons**/
+.button{
+    -fx-font-size: 14;
+    -fx-background-color:black;
+    -fx-font-weight: bold;
+    -fx-text-fill:white;
+    -fx-padding: 5 10 5 10;
+    -fx-effect: dropshadow( three-pass-box, orange, 10.0, 0.0, 0.0, 0.0);
+}
+
+.button:focused, .button:hover {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+

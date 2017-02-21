@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane minHeight="300" minWidth="400" styleClass="background" xmlns="http://javafx.com/javafx/8.0.72" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.rogalik.client.controller.menu.CreateDeleteController">
+    <top>
+        <AnchorPane minHeight="150" minWidth="400">
+            <children>
+                <HBox alignment="CENTER" prefHeight="150.0" prefWidth="400.0" styleClass="header" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                   <children>
+                       <Label fx:id="headerLabel"/>
+                       <ImageView fx:id="imageView" pickOnBounds="true" preserveRatio="true" styleClass="imageView">
+                       </ImageView>
+                   </children>
+                </HBox>
+            </children>
+        </AnchorPane>
+    </top>
+    <center>
+        <AnchorPane minHeight="50" minWidth="400">
+           <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="400.0" styleClass="middle" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                    <Label text="Nazwa:" />
+                    <TextField fx:id="nameField" promptText="nazwa" />
+               </children>
+            </HBox>
+           </children>
+        </AnchorPane>
+    </center>
+    <bottom>
+        <AnchorPane minHeight="100" minWidth="400">
+            <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="400.0" styleClass="buttonBar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                        <Button fx:id="done" mnemonicParsing="false"/>
+                        <Button fx:id="cancel" mnemonicParsing="false"/>
+               </children>
+            </HBox>
+            </children>
+        </AnchorPane>
+    </bottom>
+</BorderPane>

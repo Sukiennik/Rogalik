@@ -1,0 +1,23 @@
+{
+  "name": "ScorpioRat",
+  "type": "MEDIUM_MONSTER",
+  "hp": 100,
+  "baseDamage": 20,
+  "baseArmor": 10,
+  "fearEstimator": 20,
+  "movementPoints": 13,
+  "growthRate": 1.1,
+  "brain": {
+    "Selector": [{
+      "Sequence": ["HeroRadar", {
+        "Selector": [{
+          "Sequence": ["EscapeIndicator", "SafeTileDetector", "Movement"]
+        }, {
+          "Selector": [{
+            "Sequence": ["HeroDetector", "Attack"]
+          }, "Movement"]
+        }]
+      }]
+    }, "Wander"]
+  }
+}

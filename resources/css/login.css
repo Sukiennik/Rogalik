@@ -1,0 +1,66 @@
+.background {
+    -fx-background-color: black;
+}
+
+.headBox{
+    -fx-alignment: top-center;
+    -fx-spacing: 20;
+}
+
+.userInfoLabels {
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+    -fx-text-fill: #eff599;
+}
+
+.button{
+    -fx-background-color:
+            linear-gradient(#ffd65b, #e68400),
+            linear-gradient(#ffef84, #f2ba44),
+            linear-gradient(#ffea6a, #efaa22),
+            linear-gradient(#ffe657 0%, #ffea6a 50%, #f8c202 100%),
+            linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+}
+
+.button:focused, .button:hover {
+    -fx-background-color:
+            linear-gradient(#ffd65b, #e68400),
+            linear-gradient(#ffef84, #f2ba44),
+            linear-gradient(#ffea6a, #efaa22),
+            linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+            linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+}
+.text-field {
+    -fx-prompt-text-fill: rgb(99, 99, 99);
+    -fx-font-size: 18;
+    -fx-background-color:
+            rgba(255, 239, 132, 0.84),
+            linear-gradient(rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.31) 50%),
+            rgb(255, 234, 106);
+    -fx-background-insets: 0 0 -1 0, 0, 1.5;
+    -fx-background-radius: 6, 5, 4;
+    -fx-padding: 6 10 4 10;
+    -fx-effect: innershadow( gaussian, rgba(0, 0, 0, 0.8), 5, 0, 0, 2 );
+    -fx-font-family: "Helvetica";
+}
+
+.text-field:focused {
+    -fx-prompt-text-fill: rgb(99, 99, 99);
+    -fx-background-color:
+            rgba(255, 230, 87, 0.5),
+            rgba(248, 194, 2, 0.4),
+            rgb(242, 186, 68);
+}
+
+.buttonBox{
+    -fx-alignment: center;
+    -fx-padding: 50 50 50 50;
+    -fx-spacing: 50;
+}

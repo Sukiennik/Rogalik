@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<AnchorPane id="anchorPane" maxHeight="680.0" maxWidth="700.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="700.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.rogalik.client.controller.login.LoginController">
+   <children>
+      <BorderPane maxHeight="680.0" maxWidth="700.0" prefHeight="680.0" prefWidth="700.0" styleClass="borderPane" AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <top>
+            <AnchorPane prefHeight="340.0" prefWidth="700.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="340.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="190" fitWidth="700" preserveRatio="true" styleClass="logo">
+                           <image>
+                              <Image backgroundLoading="true" url="/images/login/gameName1.png" />
+                           </image>
+                        </ImageView>
+                                <HBox fx:id="logoBox" alignment="CENTER" prefHeight="150.0" prefWidth="700.0">
+                                   <children>
+                                        <ImageView fx:id="logoView" preserveRatio="true" styleClass="logoView">
+                                            <image>
+                                                <Image backgroundLoading="true" url="/images/login/logo2.jpg" />
+                                            </image>
+                                        </ImageView>
+                                   </children>
+                                </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane id="anchorPane2" prefHeight="240.0" prefWidth="700.0" styleClass="textArea">
+               <children>
+                  <VBox id="VBox" alignment="CENTER_LEFT" prefHeight="240.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label id="label1" styleClass="userInfoLabels" text="Nazwa użytkownika" />
+                        <TextField id="textField1" fx:id="userID" promptText="nazwa" />
+                        <Label id="label1" styleClass="userInfoLabels" text="Hasło" />
+                        <PasswordField id="passwordField1" fx:id="userPassword" promptText="hasło" />
+                        <Label fx:id="logMessage" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </center>
+         <bottom>
+            <AnchorPane prefHeight="100.0" prefWidth="700.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="700.0" styleClass="buttonBox" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button id="button1" fx:id="loginButton" mnemonicParsing="false" onAction="#loginButtonActionHandler" prefHeight="50.0" prefWidth="140.0" text="Zaloguj" />
+                        <Button id="button1" fx:id="registerButton" mnemonicParsing="false" onAction="#registerButtonActionHandler" prefHeight="50.0" prefWidth="140.0" text="Zarejestruj" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+   </children>
+   <stylesheets>
+      <URL value="@/css/login.css" />
+   </stylesheets>
+</AnchorPane>
